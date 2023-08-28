@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body,
+      html {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="data-bs-theme" style="width: 300px">
+
+      <div class="form-check form-switch my-1 mx-1">
+        <input class="form-check-input" type="checkbox" id="checkboxEnable">
+        <label class="form-check-label" for="checkboxEnable">
+          <span style="all: unset;">
+            <span style="all: unset;">启用</span>
+            <span style="all: unset;" id="spanShortcutKeys">(Ctrl+E)</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="form-floating my-1 mx-1">
+        <input type="text" class="form-control" id="textAPPID" placeholder="APP ID">
+        <label for="textAPPID">APP ID</label>
+      </div>
+      <div class="form-floating my-1 mx-1">
+        <input type="text" class="form-control" id="textPassword" placeholder="密钥">
+        <label for="textPassword">密钥</label>
+      </div>
+
+      <div class="my-1 mx-1">
+        <label for="selectPopPosition">方向</label>
+        <select class="form-select" id="selectPopPosition">
+          <option>up</option>
+          <option>down</option>
+          <option>float-right</option>
+          <option>float-left</option>
+        </select>
+      </div>
+
+
+      <div class="my-1 mx-1">
+        <label for="selectApiType">调用接口</label>
+        <select class="form-select" id="selectApiType">
+          <option>百度</option>
+          <option>腾讯</option>
+        </select>
+      </div>
+
+      <div style="text-align:center;" class="my-1 mx-1">
+        <button type="button" class="btn btn-primary btn-sm" style="width: 100px" id="btnSave">
+        <span style="all: unset;">
+          <span style="all: unset;">保存</span>
+        </span>
+        </button>
+      </div>
+
+
+    </div>
+    <script type="text/javascript" src="js/popup.js"></script>
+  </body>
+
+</html>

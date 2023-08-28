@@ -1,0 +1,57 @@
+{
+  "name": "Translate",
+  "description": "简单快速翻译",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "css": [
+        "./css/styles.css"
+      ],
+      "js": [
+        "./js/content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "./popup.html",
+    "default_icon": {
+      "16": "./logo/logo16.png",
+      "32": "./logo/logo32.png",
+      "48": "./logo/logo48.png",
+      "128": "./logo/logo128.png"
+    }
+  },
+  "icons": {
+    "16": "./logo/logo16.png",
+    "32": "./logo/logo32.png",
+    "48": "./logo/logo48.png",
+    "128": "./logo/logo128.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens popup.html"
+    }
+  },
+  "externally_connectable": {
+    "matches": ["*://*.example.com/*"]
+  }
+}
