@@ -12,7 +12,7 @@
 - 更多特性待开发...
 
 ## 🎉 应用界面
-![img_2.png](shots/img_2.png)
+![img_2.png](https://github.com/claire0821/translate/tree/master/shots/img_2.png)
 
 ## ☑️ TODO
 
@@ -31,9 +31,9 @@
 - 程序无任何收费和用户信息收集行为，翻译接口须自行注册开通服务
 ## 截图
 **单词翻译** 鼠标移动到需要翻译的单词上
-![word.gif](shots/word.gif)
+![word.gif](https://github.com/claire0821/translate/tree/master/shots/word.gif)
 **句子翻译** 鼠标点击选中需要翻译的句子
-![sentence.gif](shots/sentence.gif)
+![sentence.gif](https://github.com/claire0821/translate/tree/master/shots/sentence.gif)
 
 ## 问题
 
@@ -59,9 +59,9 @@
 - 点击开通付费版
 - 获取密钥
 新建密钥(https://console.cloud.tencent.com/cam/capi)
-  ![img.png](shots/img.png)
+  ![img.png](https://github.com/claire0821/translate/tree/master/shots/img.png)
 复制密钥
-![img_1.png](shots/img_1.png)
+![img_1.png](https://github.com/claire0821/translate/tree/master/shots/img_1.png)
   
 #### 签名生成
 在线调试(https://console.cloud.tencent.com/api/explorer?Product=tmt&Version=2018-03-21&Action=TextTranslate)
