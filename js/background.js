@@ -33,8 +33,6 @@ async function send(url) {
 let tencentUrl = "https://tmt.tencentcloudapi.com"
 async function fetchTencent(params) {
     try {
-        console.log(tencentUrl)
-        console.log(params.payload)
         let response = await fetch(tencentUrl, {
             method: 'POST',
             timeout: 2000,
@@ -51,7 +49,6 @@ async function fetchTencent(params) {
             },
             body: params.payload
         });
-
         return await response.text();
     } catch (error) {
         console.log('Request Failed', error);
