@@ -39,8 +39,6 @@
 
 ![sentence](../shots/sentence.gif)
 
-
-
 ## 📝 文件说明
 
 ### background.js
@@ -76,19 +74,19 @@
 - 申请机器翻译TMT(每月500万字符免费额度)
 - 点击开通付费版
 - 获取密钥
-新建密钥(https://console.cloud.tencent.com/cam/capi)
+[新建密钥](https://console.cloud.tencent.com/cam/capi)
+
 
 ![img](../shots/img.png)
 
 - 复制密钥
 
-![img_1](../shots/img_1.png)![img_1.png](https://gitee.com/claire0821/translate/blob/master/shots/img_1.png)
+![img_1](../shots/img_1.png)
 #### 签名生成
-在线调试(https://console.cloud.tencent.com/api/explorer?Product=tmt&Version=2018-03-21&Action=TextTranslate)
-生成签名demo参考文档(https://cloud.tencent.com/document/api/213/30654)NodeJS示列
-使用了crypto-js替代crypto生成签名(https://cdn.staticfile.org/crypto-js/3.1.2/rollups/hmac-sha256.js)
+[在线调试](https://console.cloud.tencent.com/api/explorer?Product=tmt&Version=2018-03-21&Action=TextTranslate)
+参考生成签名demo NodeJS示列[参考文档](https://cloud.tencent.com/document/api/213/30654)
+使用了[crypto-js](https://cdn.staticfile.org/crypto-js/3.1.2/rollups/hmac-sha256.js) 替代crypto生成签名
 发送post请求后返回AuthFailure.SignatureFailure留意以下地方
-
 - service是tmt，endpoint是tmt.tencentcloudapi.com
 - 通过在线调试页面输入相同的时间戳生成签名，对比发送请求
 - 添加X-TC-Language
@@ -102,16 +100,19 @@ git clone https://github.com/claire0821/translate.git
 cd translate
 ```
 
-### 获取可执行文件
-
-- 正式发行版 [🚀 Releases](https://github.com/claire0821/translate/releases/)
-- 自动构建的测试版 [🤖 CI](https://github.com/claire0821/translate/actions)
-
-
+### 安装
+- 在chrome打开扩展程序 chrome://extensions/
+- 打开开发者模式
+- 加载已解压的扩展程序
+- 选择项目根目录
+![img3](../shots/img3.png)
+![img4](../shots/img4.png)
+  
 ## 🤝 交流反馈
 
-- 提交 [📌Issues](https://github.com/claire0821/translate/issues)
-- 博客评论区 [📌Blog Page](https://juejin.cn/creator/home)
+- 提交📌Issues
+[gitee](https://gitee.com/claire0821/translate/issues)
+[github](https://github.com/claire0821/translate/issues)
 
 ## 📜 开源许可
 
