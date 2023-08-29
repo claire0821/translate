@@ -12,7 +12,7 @@
 - 更多功能待开发...
 
 ## 🎉 应用界面
-![img_2.png](https://gitee.com/claire0821/translate/blob/master/shots/img_2.png)
+![popup](../shots/popup.png)
 
 ## ☑️TODO
 
@@ -32,10 +32,14 @@
 
 ## 🎨 截图
 **单词翻译** 鼠标移动到需要翻译的单词上
-![word](https://gitee.com/claire0821/translate/blob/master/shots/word.gif)
+
+![word](../shots/word.gif)
 
 **句子翻译** 鼠标点击选中需要翻译的句子
-![sentence](https://gitee.com/claire0821/translate/blob/master/shots/sentence.gif)
+
+![sentence](../shots/sentence.gif)
+
+
 
 ## 📝 文件说明
 
@@ -73,20 +77,21 @@
 - 点击开通付费版
 - 获取密钥
 新建密钥(https://console.cloud.tencent.com/cam/capi)
-![img.png](https://gitee.com/claire0821/translate/blob/master/shots/img.png)
-复制密钥
-![img_1.png](https://gitee.com/claire0821/translate/blob/master/shots/img_1.png)
-  
+
+![img](../shots/img.png)
+
+- 复制密钥
+
+![img_1](../shots/img_1.png)![img_1.png](https://gitee.com/claire0821/translate/blob/master/shots/img_1.png)
 #### 签名生成
 在线调试(https://console.cloud.tencent.com/api/explorer?Product=tmt&Version=2018-03-21&Action=TextTranslate)
 生成签名demo参考文档(https://cloud.tencent.com/document/api/213/30654)NodeJS示列
 使用了crypto-js替代crypto生成签名(https://cdn.staticfile.org/crypto-js/3.1.2/rollups/hmac-sha256.js)
 发送post请求后返回AuthFailure.SignatureFailure留意以下地方
+
 - service是tmt，endpoint是tmt.tencentcloudapi.com
 - 通过在线调试页面输入相同的时间戳生成签名，对比发送请求
 - 添加X-TC-Language
-
-
 
 ## 🛠 快速开始
 
